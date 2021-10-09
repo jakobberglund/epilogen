@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="inner">
       <h1>Epilogen<sup>1</sup></h1>
-      <p>Kommer snartt</p>
+      <p>Kommer snart</p>
     </div>
   </div>
 </template>
