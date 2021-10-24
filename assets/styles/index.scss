@@ -1,8 +1,7 @@
 :root {
-  --epl--color--background: #942423;
-  --epl--color--text: #eebbba;
-  --epl--color--link: rgb(255 255 255);
-  --epl--typography--font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --epl--color--background: hsl(0 0% 90%);
+  --epl--color--text: hsl(0 0% 0%);
+  --epl--typography--font-family: 'Cormorant Garamond', serif;
 }
 
 html {
@@ -14,8 +13,4 @@ body {
   color: var(--epl--color--text);
   font-family: var(--epl--typography--font-family);
   height: 100vh;
-}
-
-a {
-  color: var(--epl--color--link);
 }

@@ -1,8 +1,7 @@
 <template>
   <div class="wrapper">
     <div>
-      <h1>Epilogen<sup>1</sup></h1>
-      <p>Kommer snart</p>
+      <h1>Epilogen, kommer snart.</h1>
     </div>
   </div>
 </template>
@@ -26,19 +25,7 @@ export default Vue.extend({})
 
 h1 {
   max-width: 35ch;
-  font-size: clamp(2rem, calc(1rem + 2vw), 4rem);
+  font-size: clamp(1rem, calc(1rem + 2vw), 1.25rem);
   font-weight: 200;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-}
-
-p {
-  color: var(--epl--color--background);
-  background: var(--epl--color--text);
-  font-size: clamp(0.5rem, calc(1rem + 2vw), 1rem);
-  padding: 0.5em;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 0.02em;
 }
 </style>
