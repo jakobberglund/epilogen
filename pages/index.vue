@@ -1,31 +1,19 @@
 <template>
-  <div class="wrapper">
+  <div :class="indexClass">
     <div>
-      <h1>Epilogen, kommer snart.</h1>
+      <h1 :class="indexH1Class">Epilogen, kommer snart.</h1>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import { indexClass, indexH1 } from './index.css'
 
-export default Vue.extend({})
+export default Vue.extend({
+  computed: {
+    indexClass: () => indexClass,
+    indexH1Class: () => indexH1,
+  },
+})
 </script>
-
-<style scoped>
-.wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  text-align: center;
-}
-
-h1 {
-  max-width: 35ch;
-  font-size: clamp(1rem, calc(1rem + 2vw), 1.25rem);
-  font-weight: 200;
-}
-</style>

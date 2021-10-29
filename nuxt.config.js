@@ -1,3 +1,5 @@
+const { VanillaExtractPlugin } = require('@vanilla-extract/webpack-plugin')
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -56,7 +58,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['@/assets/styles/reset.css', '@/assets/styles/index.scss'],
+  css: ['@/assets/styles/reset.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -70,11 +72,14 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
+    '@nuxt/image',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    plugins: [new VanillaExtractPlugin()],
+  },
 }
